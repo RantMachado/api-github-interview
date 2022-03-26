@@ -1,13 +1,14 @@
 import React from 'react';
 import '../../scss/page/home.scss';
 import Header from '../components/Header';
+import Main from '../components/Main'
 import Footer from '../components/Footer';
 
-function Home() {
+const Home = () => {
   return (
     <>
       <Header />
-      
+      <Main />
       <Footer />
     </>
   )

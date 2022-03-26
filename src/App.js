@@ -2,10 +2,12 @@ import React from 'react';
 import './assets/scss/styles.scss';
 import Home from './assets/js/page/Home';
 
-function App() {
+const App = () => {
   return (
-    <Home />
-  );
+    <>
+      <Home />
+    </>
+  )
 }
 
 export default App;

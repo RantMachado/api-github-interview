@@ -1,6 +1,7 @@
 // Configs
-@import './configs/normalize';
+@import './configs/0-reset';
+@import './configs/1-normalize';
 
 // Tools
-@import './tools/grid';
-@import './tools/mixins';
+@import './tools/0-grid';
+@import './tools/1-mixins';
