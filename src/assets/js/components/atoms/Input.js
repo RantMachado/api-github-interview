@@ -1,10 +1,8 @@
 import React from 'react';
 
-const Input = () => {
+const Input = ({...props}) => {
   return (
-    <input 
-      
-    />
+    <input {...props} />
   )
 }
 

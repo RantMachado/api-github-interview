@@ -1,0 +1,23 @@
+#root {
+  display: grid;
+  grid-template-areas: 'header''main''footer';
+  gap: 10px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include desktop {
+    max-width: toRem(1280);
+  }
+
+  @include tablet {
+    max-width: 90%;
+  }
+
+  @include mobile {
+    max-width: 90%;
+  }
+}

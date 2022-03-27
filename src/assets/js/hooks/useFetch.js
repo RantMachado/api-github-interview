@@ -17,7 +17,6 @@ const useFetch = () => {
     } catch (err) {
 
       json = null;
-    
       console.log(`error on fetch: ${err}`);
 
     } finally {
@@ -30,7 +29,6 @@ const useFetch = () => {
       }
 
     }
-
 
   }
 
