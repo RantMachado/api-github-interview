@@ -1,10 +1,5 @@
 import React from 'react';
 
-import Div from '../atoms/Div';
-import Label from '../atoms/Label';
-import Input from '../atoms/Input';
-import Button from '../atoms/Button';
-
 import { GlobalContext } from '../../context/GlobalContext';
 import useFetch from '../../hooks/useFetch';
 import { GET_USER } from '../../utils/api';
@@ -27,9 +22,9 @@ const HeaderSearch = () => {
 
       if (userName != null) {
         const { url, options} = GET_USER(userName);
-        const { json } = await request(url, options);
+        const { response, json } = await request(url, options);
         document.title = `Finder - ${json.login}`;
-        global.setContext(json);
+        global.setContext({ response, json });
       }
 
     }
@@ -39,12 +34,12 @@ const HeaderSearch = () => {
   }, [userName]);
 
   return (
-    <Div className="header__search">
-      <Label htmlFor="buscar" name="buscar">
-        <Input className="header__input" type="text" name="buscar" placeholder="buscar" data-input="target" />
-      </Label>
-      <Button className="header__button" onClick={handleClick}>OK</Button>
-    </Div>
+    <div className="header__search">
+      <label htmlFor="buscar" name="buscar">
+        <input className="header__input" type="text" name="buscar" placeholder="buscar" data-input="target" />
+      </label>
+      <button className="header__button" onClick={handleClick}>OK</button>
+    </div>
   )
 }
 

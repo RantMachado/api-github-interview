@@ -1,16 +1,3 @@
 .home {
   background-color: $c-white;
-
-  .main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: auto;
-
-    &__section {
-      width: 100vw;
-      height: auto;
-    }
-  }
 }

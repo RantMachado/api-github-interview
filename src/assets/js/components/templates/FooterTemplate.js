@@ -1,10 +1,12 @@
 import React from 'react';
 
-import Footer from '../atoms/Footer';
+import DeveloperBy from '../atoms/DeveloperBy';
 
 const FooterTemplate = () => {
   return (
-    <Footer className="footer"></Footer>
+    <footer className="footer">
+      <DeveloperBy />
+    </footer>
   )
 }
 

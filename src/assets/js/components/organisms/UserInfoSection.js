@@ -1,21 +1,19 @@
 import React from 'react';
 import { GlobalContext } from '../../context/GlobalContext'
 
-import Section from '../atoms/Section';
-
-import Welcome from '../molecules/Welcome';
-import CardUSer from '../molecules/CardUSer';
+import Welcome from '../atoms/Welcome';
+import ContainerCardUser from '../molecules/ContainerCardUser';
 
 const UserInfoSection = () => {
 
   const global = React.useContext(GlobalContext);
 
   return (
-    <Section className="container">
+    <section className="container">
       {
-        global.context === '' ? <Welcome /> : <CardUSer global={global} />
+        global.context === '' ? <Welcome /> : <ContainerCardUser global={global} />
       }
-    </Section>
+    </section>
   )
 }
 
