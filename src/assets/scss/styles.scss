@@ -1,7 +1,18 @@
 // Configs
 @import './configs/0-reset';
 @import './configs/1-normalize';
+@import './configs/2-fonts';
+@import './configs/3-variables';
 
 // Tools
 @import './tools/0-grid';
 @import './tools/1-mixins';
+@import './tools/2-functions';
+
+// Components
+@import './components/header.scss';
+@import './components/main.scss';
+@import './components/footer.scss';
+
+// Pages
+@import './page/home.scss';
