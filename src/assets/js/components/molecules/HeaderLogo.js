@@ -2,8 +2,7 @@ import React from 'react';
 
 import { ReactComponent as Github} from '../../../img/github.svg';
 
-import Div from '../molecules/Div';
-
+import Div from '../atoms/Div';
 import Span from '../atoms/Span';
 
 const HeaderLogo = () => {

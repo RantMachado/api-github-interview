@@ -1,3 +1,27 @@
 .main {
   grid-area: main;
+
+
+  .card {
+
+    &__h1 {
+      text-align: center;
+    }
+
+    &__img {
+      border-radius: toRem(10);
+      box-shadow: 3px 3px 5px rgb($c-black, .7);
+      max-width: toRem(400);
+    }
+
+  }
+
+  .welcome {
+    &__p {
+      font: {
+        size: toRem(24);
+      }
+    }
+  }
+  
 }

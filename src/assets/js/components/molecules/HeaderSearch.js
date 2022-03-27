@@ -1,7 +1,6 @@
 import React from 'react';
 
-import Div from '../molecules/Div';
-
+import Div from '../atoms/Div';
 import Label from '../atoms/Label';
 import Input from '../atoms/Input';
 import Button from '../atoms/Button';
@@ -15,7 +14,7 @@ const HeaderSearch = () => {
   
   const global = React.useContext(GlobalContext);
   const [userName, setUserName] = React.useState(null);
-  const { data, request } = useFetch();
+  const { request } = useFetch();
 
   function handleClick() {
     const _userName = document.querySelector('[data-input="target"]').value;
@@ -23,9 +22,9 @@ const HeaderSearch = () => {
   }
 
   React.useEffect(() => {
-    
+
     async function getData() {
-      
+
       if (userName != null) {
         const { url, options} = GET_USER(userName);
         const { json } = await request(url, options);
