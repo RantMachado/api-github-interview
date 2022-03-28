@@ -1,8 +1,8 @@
 import React from 'react';
-import { GlobalContext } from '../../context/GlobalContext'
+import { GlobalContext } from '../../../context/GlobalContext'
 
-import Welcome from '../atoms/Welcome';
-import ContainerCardUser from '../molecules/ContainerCardUser';
+import Welcome from '../../atoms/welcome/Welcome';
+import ContainerCardUser from '../../molecules/containerCardUser/ContainerCardUser';
 
 const UserInfoSection = () => {
 

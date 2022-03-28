@@ -6,7 +6,7 @@ const Welcome = () => {
       <p className="welcome__p">
         Seja bem vindo(a)
         <br />
-        busque pelo seu <strong>nome de usuário</strong>
+        busque pelo seu nome de usuário do <strong>Github</strong>
       </p>
     </div>
   )

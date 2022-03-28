@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { ReactComponent as Github} from '../../../img/github.svg';
+import { ReactComponent as Github} from '../../../../img/github.svg';
 
 const HeaderLogo = () => {
   return (

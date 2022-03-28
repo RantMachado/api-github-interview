@@ -1,8 +1,8 @@
 import React from 'react';
 
-import { GlobalContext } from '../../context/GlobalContext';
-import useFetch from '../../hooks/useFetch';
-import { GET_USER } from '../../utils/api';
+import { GlobalContext } from '../../../context/GlobalContext';
+import useFetch from '../../../hooks/useFetch';
+import { GET_USER } from '../../../utils/api';
 
 
 const HeaderSearch = () => {

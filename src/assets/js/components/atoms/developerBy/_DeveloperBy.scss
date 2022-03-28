@@ -1,0 +1,11 @@
+.developedBy {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+
+  p {
+    color: $c-white;
+  }
+}

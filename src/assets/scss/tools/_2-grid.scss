@@ -4,6 +4,18 @@
   gap: 10px;
 }
 
+.header {
+  grid-area: header;
+}
+
+.main {
+  grid-area: main;
+}
+
+.footer {
+  grid-area: footer;
+}
+
 .container {
   display: flex;
   justify-content: center;

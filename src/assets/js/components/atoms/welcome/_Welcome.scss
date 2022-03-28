@@ -1,0 +1,14 @@
+.welcome {
+
+  @include desktop {
+    margin-top: toRem(48);
+  }
+
+  &__p {
+    text-align: center;
+    font: {
+      size: toRem(24);
+    }
+    line-height: toRem(36);
+  }
+} 

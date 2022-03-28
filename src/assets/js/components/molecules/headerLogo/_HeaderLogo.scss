@@ -1,0 +1,9 @@
+.header__logo {
+  span {
+    font: {
+      family: 'Hurricane';
+      size: toRem(48);
+    }
+    color: $c-turquoise;
+  }
+}

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import UserInfoSection from '../organisms/UserInfoSection';
+import UserInfoSection from '../../organisms/userInfoSection/UserInfoSection';
 
 const MainTemplate = () => {
   return (

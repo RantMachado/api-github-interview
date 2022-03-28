@@ -1,0 +1,48 @@
+.notFound {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: toRem(30);
+
+  @include desktop {
+    margin-top: toRem(48);
+  }
+
+  &__img {
+    @include desktop {
+      width: 300px;
+      height: auto;
+    }
+  }
+
+  &__p {
+    font: {
+      size: toRem(48);
+    }
+    line-height: toRem(48);
+  }
+
+  &__goBack {
+    display: block;
+    color: $c-turquoise;
+    background-color: transparent;
+    border-radius: toRem(10);
+    border: 1px solid currentColor;
+    cursor: pointer;
+    text-align: center;
+    padding-top: toRem(10);
+
+    &:hover {
+      color: $c-white;
+      background-color: $c-turquoise;
+    }
+
+    @include desktop {
+      width: toRem(100);
+      height: toRem(40);
+    }
+  }
+
+}

@@ -1,7 +1,7 @@
 import React from 'react';
 
-import HeaderLogo from '../molecules/HeaderLogo';
-import HeaderSearch from '../molecules/HeaderSearch';
+import HeaderLogo from '../../molecules/headerLogo/HeaderLogo';
+import HeaderSearch from '../../molecules/headerSearch/HeaderSearch';
 
 const NavHeader = () => {
   return (

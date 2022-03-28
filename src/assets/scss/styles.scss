@@ -12,9 +12,7 @@
 @import './utils/1-variables';
 
 // Components
-@import './components/header.scss';
-@import './components/main.scss';
-@import './components/footer.scss';
+@import '../js/components/index';
 
 // Pages
-@import './page/home.scss';
+@import '../js/pages/index';

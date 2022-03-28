@@ -1,6 +1,6 @@
 import React from 'react';
 
-import NavHeader from '../organisms/NavHeader';
+import NavHeader from '../../organisms/navHeader/NavHeader';
 
 const HeaderTemplate = () => {
   return (
