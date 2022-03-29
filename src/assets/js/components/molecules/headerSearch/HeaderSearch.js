@@ -9,6 +9,18 @@ const HeaderSearch = () => {
   const [userName, setUserName] = React.useState(null);
   const { request } = useFetch();
 
+  const handleLoad = () => {
+    setTimeout(() => {
+      
+      const params = window.location.pathname.replace('/', '');
+      if(params !== '') 
+        setUserName(params);
+
+    }, 1000);
+  }
+
+  window.addEventListener('load', handleLoad);
+  
   const handleClick = () => {
     const _userName = document.querySelector('[data-input="target"]').value;
     setUserName(_userName);
