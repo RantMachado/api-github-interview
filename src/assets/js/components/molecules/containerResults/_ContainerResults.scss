@@ -1,0 +1,35 @@
+.containerResults {
+  display: none;
+  width: 100%;
+  height: toRem(30);
+  margin-top: toRem(30);
+  margin-bottom: toRem(30);
+
+  &--active {
+    display: block;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: toRem(150);
+    border: 1px solid $c-gray;
+    overflow-y: scroll;
+    padding: toRem(10);
+    @include scrollbars(toRem(5), $c-black, $c-gray);
+
+    li {
+      margin-top: toRem(5);
+      margin-bottom: toRem(5);
+      color: $c-turquoise;
+
+      font: {
+        size: toRem(18);
+        weight: bold;
+      }
+    }
+  }
+}

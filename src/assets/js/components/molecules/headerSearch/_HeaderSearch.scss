@@ -1,0 +1,34 @@
+.header__input {
+  border: 1px solid $c-gray;
+  padding: toRem(10);
+
+  @include tablet {
+    padding: toRem(8);
+  }
+
+  @include mobile {
+    padding: toRem(4);
+  }
+
+  @include iphone5 {
+    width: toRem(100);
+  }
+}
+
+.header__button {
+  color: $c-white;
+  background-color: $c-turquoise;
+  border: 1px solid currentColor;
+  cursor: pointer;
+  margin-left: toRem(10);
+  padding: toRem(10);
+  border-radius: toRem(5);
+
+  @include tablet {
+    padding: toRem(8);
+  }
+
+  @include mobile {
+    padding: toRem(4);
+  }
+}

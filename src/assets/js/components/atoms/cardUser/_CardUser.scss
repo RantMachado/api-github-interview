@@ -1,0 +1,38 @@
+.card {
+
+  border: 1px solid $c-gray;
+  padding: toRem(10);
+  border-radius: toRem(10);
+  box-shadow: 3px 3px 5px rgb($c-black, .7);
+  background-color: rgba($c-gray, .4);
+
+  @include desktop {
+    margin-top: toRem(48);
+  }
+
+  &__h1 {
+    text-align: center;
+  }
+
+  &__img {
+    border-radius: toRem(10);
+    max-width: toRem(400);
+  }
+
+}
+
+.anima-left {
+  animation: animaLeft 2s ease-in-out forwards;
+}
+
+@keyframes animaLeft {
+  from {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

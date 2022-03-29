@@ -1,0 +1,18 @@
+// Configs
+@import './configs/0-reset';
+@import './configs/1-normalize';
+
+// Tools
+@import './tools/0-mixins';
+@import './tools/1-functions';
+@import './tools/2-grid';
+
+//utils
+@import './utils/0-fonts';
+@import './utils/1-variables';
+
+// Components
+@import '../js/components/index';
+
+// Pages
+@import '../js/pages/index';

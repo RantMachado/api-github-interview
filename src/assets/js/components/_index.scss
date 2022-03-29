@@ -1,0 +1,23 @@
+//atoms
+@import './atoms/developerBy/DeveloperBy';
+@import './atoms/userNotFound/UserNotFound';
+@import './atoms/welcome/Welcome';
+@import './atoms/cardUser/CardUser';
+@import './atoms/btnRepos/BtnRepos';
+@import './atoms/btnStarred/BtnStarred';
+
+//molecules
+@import './molecules/headerLogo/HeaderLogo';
+@import './molecules/headerSearch/HeaderSearch';
+@import './molecules/containerCardUser/ContainerCardUser';
+@import './molecules/containerBtns/ContainerBtns';
+@import './molecules/containerResults/ContainerResults';
+
+//organisms
+@import './organisms/navHeader/NavHeader';
+@import './organisms/userSection/UserSection';
+
+//templates
+@import './templates/footerTemplate/FooterTemplate';
+@import './templates/mainTemplate/MainTemplate';
+@import './templates/headerTemplate/HeaderTemplate';

@@ -1,0 +1,19 @@
+.containerBtns__starred {
+  background-color: transparent;
+  color: $c-turquoise;
+  border: 1px solid currentColor;
+  border-radius: toRem(10);
+  cursor: pointer;
+  width: toRem(100);
+  height: toRem(40);
+
+  &:hover {
+    color: $c-white;
+    background-color: $c-turquoise;
+  }
+  
+  &--active {
+    color: $c-white;
+    background-color: $c-turquoise;
+  }
+}

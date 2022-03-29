@@ -1,0 +1,38 @@
+#root {
+  display: grid;
+  grid-template-areas: 'header''main''footer';
+  grid-template-columns: 1fr;
+  grid-template-rows: toRem(70) minmax(toRem(800), 1fr) toRem(140);
+  gap: 10px;
+}
+
+.header {
+  grid-area: header;
+}
+
+.main {
+  grid-area: main;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  @include desktop {
+    max-width: toRem(1280);
+  }
+
+  @include tablet {
+    max-width: 95%;
+  }
+
+  @include mobile {
+    max-width: 90%;
+  }
+}
