@@ -2,14 +2,20 @@
 @import './atoms/developerBy/DeveloperBy';
 @import './atoms/notFound/NotFound';
 @import './atoms/welcome/Welcome';
+@import './atoms/cardUser/CardUser';
+@import './atoms/btnRepos/BtnRepos';
+@import './atoms/btnStarred/BtnStarred';
 
 //molecules
-@import './molecules/cardUser/CardUser';
 @import './molecules/headerLogo/HeaderLogo';
 @import './molecules/headerSearch/HeaderSearch';
+@import './molecules/containerCardUser/ContainerCardUser';
+@import './molecules/containerBtns/ContainerBtns';
+@import './molecules/containerResults/ContainerResults';
 
 //organisms
 @import './organisms/navHeader/NavHeader';
+@import './organisms/userSection/UserSection';
 
 //templates
 @import './templates/footerTemplate/FooterTemplate';

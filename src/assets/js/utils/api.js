@@ -26,7 +26,7 @@ export function GET_REPOS(user) {
 
 export function GET_STARRED(user) {
   return {
-    url: `${BASE_URL}/users/${user}/starred{/owner}{/repo}`,
+    url: `${BASE_URL}/users/${user}/starred`,
     options: {
       method: 'GET',
       headers: {

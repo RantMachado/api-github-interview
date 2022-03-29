@@ -6,7 +6,7 @@ const HeaderLogo = () => {
   return (
     <div className='header__logo'>
       <Github />
-      <span>Finder</span>
+      <a href="/">Finder</a>
     </div>
   )
 }

@@ -7,7 +7,7 @@ const CardUSer = ({global}) => {
   return (
     json && <div className="card">
       <h1 className="card__h1">Usuário: <strong>{json.login}</strong></h1>
-      <img className="card__img" src={json.avatar_url} alt="github logo"/>
+      <img className="card__img" src={json.avatar_url} alt="foto do usuário"/>
     </div>
   )
 }

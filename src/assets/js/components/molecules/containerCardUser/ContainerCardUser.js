@@ -1,7 +1,7 @@
 import React from 'react';
 
 import NotFound from '../../atoms/notFound/NotFound';
-import CardUSer from '../cardUser/CardUSer';
+import CardUSer from '../../atoms/cardUser/CardUSer';
 
 const ContainerCardUser = ({global}) => {
 

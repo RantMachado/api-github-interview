@@ -1,6 +1,8 @@
 #root {
   display: grid;
   grid-template-areas: 'header''main''footer';
+  grid-template-columns: 1fr;
+  grid-template-rows: toRem(70) minmax(toRem(600), 1fr) toRem(140);
   gap: 10px;
 }
 
@@ -20,13 +22,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 
   @include desktop {
     max-width: toRem(1280);
   }
 
   @include tablet {
-    max-width: 90%;
+    max-width: 95%;
   }
 
   @include mobile {
