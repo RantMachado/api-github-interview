@@ -20,7 +20,7 @@ const HeaderSearch = () => {
   }
 
   window.addEventListener('load', handleLoad);
-  
+
   const handleClick = () => {
     const _userName = document.querySelector('[data-input="target"]').value;
     setUserName(_userName);
