@@ -1,9 +1,33 @@
 .header__logo {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: baseline;
+  align-items: baseline;
+  gap: 10px;
+
   a {
     font: {
       family: 'Hurricane';
-      size: toRem(48);
     }
     color: $c-turquoise;
+
+    @include desktop {
+      font: {
+        size: toRem(48);
+      }
+    }
+
+    @include tablet {
+      font: {
+        size: toRem(36);
+      }
+    }
+
+    @include mobile {
+      font: {
+        size: toRem(24);
+      }
+    }
   }
 }

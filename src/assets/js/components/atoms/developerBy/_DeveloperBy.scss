@@ -5,7 +5,16 @@
   align-items: center;
   width: 100vw;
 
+  @include mobile {
+    flex-direction: column;
+  }
+
   p {
     color: $c-white;
+
+    @include mobile {
+      margin-top: toRem(5);
+      margin-bottom: toRem(5);
+    }
   }
 }

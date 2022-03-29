@@ -11,13 +11,13 @@ const UserSection = () => {
   const global = React.useContext(GlobalContext);
 
   return (
-    <section className="container">
+    <section className="container fade-in">
       {
         global.context === '' ? <Welcome /> : 
         <>
           <ContainerCardUser global={global} />
           <ContainerBtns global={global} />
-          <ContainerResults />
+          <ContainerResults global={global} />
         </>
       }
     </section>

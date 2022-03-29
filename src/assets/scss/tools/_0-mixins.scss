@@ -16,6 +16,12 @@
   }
 }
 
+@mixin iphone5 {
+  @media only screen and (max-width: 320px) {
+    @content;
+  }
+}
+
 @mixin scrollbars($size, $foreground-color, $background-color: mix($foreground-color, white,  50%)) {
   // For Google Chrome
   &::-webkit-scrollbar {

@@ -1,9 +1,13 @@
 .containerResults {
-  display: block;
+  display: none;
   width: 100%;
   height: toRem(30);
   margin-top: toRem(30);
   margin-bottom: toRem(30);
+
+  &--active {
+    display: block;
+  }
 
   ul {
     display: flex;
@@ -15,7 +19,7 @@
     border: 1px solid $c-gray;
     overflow-y: scroll;
     padding: toRem(10);
-    @include scrollbars(toRem(5), $c-turquoise, $c-gray);
+    @include scrollbars(toRem(5), $c-black, $c-gray);
 
     li {
       margin-top: toRem(5);

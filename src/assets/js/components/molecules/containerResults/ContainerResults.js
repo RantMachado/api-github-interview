@@ -1,10 +1,15 @@
 import React from 'react';
 
-const ContainerResults = () => {
+const ContainerResults = ({global}) => {
+
+  const { response } = global.context;
+  
   return (
-    <div className='containerResults' data-target="ulResults">
-      <ul></ul>
-    </div>
+    response.ok === false ? 
+      <></> : 
+      <div className='containerResults' data-target="ulResults">
+        <ul></ul>
+      </div>
   )
 }
 

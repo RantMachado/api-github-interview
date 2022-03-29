@@ -1,6 +1,6 @@
 import React from 'react';
 
-import NotFound from '../../atoms/notFound/NotFound';
+import NotFound from '../../atoms/userNotFound/UserNotFound';
 import CardUSer from '../../atoms/cardUser/CardUSer';
 
 const ContainerCardUser = ({global}) => {

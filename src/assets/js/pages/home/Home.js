@@ -1,8 +1,6 @@
 import React from 'react';
-
-import HeaderTemplate from '../../components/templates/headerTemplate/HeaderTemplate';
 import MainTemplate from '../../components/templates/mainTemplate/MainTemplate';
-import FooterTemplate from '../../components/templates/footerTemplate/FooterTemplate';
+
 
 const Home = () => {
 
@@ -14,9 +12,7 @@ const Home = () => {
 
   return (
     <>
-      <HeaderTemplate />
       <MainTemplate />
-      <FooterTemplate />
     </>
   )
 

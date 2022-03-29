@@ -10,27 +10,48 @@ const BtnRepos = () => {
   const { json } = global.context;
   const { login } = json;
 
-  const getRepos = async () => {
+  const clearResult = () => {
+
     const results = document.querySelector('[data-target="ulResults"]');
     const removeUl = document.querySelector('[data-target="ulResults"] ul');
     const newUl = document.createElement('ul');
-
     results.removeChild(removeUl);
-
     results.appendChild(newUl);
+
+  }
+
+  const changeClassBtn = () => {
+
+    document.querySelector('[data-btn="starred"]').classList.remove('containerBtns__starred--active');
+    document.querySelector('[data-btn="repos"]').classList.add('containerBtns__repos--active');
+
+  }
+
+  const getRepos = async () => {
+
+    clearResult();
 
     const { url, options } = GET_REPOS(login);
     const { json } = await request(url, options);
 
-    json.forEach((element) => {
-      const { name } = element;
-      const li = document.createElement('li');
-      li.appendChild(document.createTextNode(name));
-      document.querySelector('[data-target="ulResults"] ul').appendChild(li);
-    });
+    if(json.length > 0 ) {
 
-    document.querySelector('[data-btn="starred"]').classList.remove('containerBtns__starred--active');
-    document.querySelector('[data-btn="repos"]').classList.add('containerBtns__repos--active');
+      document.querySelector('[data-target="ulResults"]').classList.add('containerResults--active');
+
+      json.forEach((element) => {
+        const { name } = element;
+        const li = document.createElement('li');
+        li.appendChild(document.createTextNode(name));
+        document.querySelector('[data-target="ulResults"] ul').appendChild(li);
+      });
+
+    } else {
+
+      alert('Usuário não tem repositórios');
+
+    }
+
+    changeClassBtn();
   }
 
   return (

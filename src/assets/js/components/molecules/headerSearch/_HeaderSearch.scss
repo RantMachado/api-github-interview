@@ -5,6 +5,14 @@
   @include tablet {
     padding: toRem(8);
   }
+
+  @include mobile {
+    padding: toRem(4);
+  }
+
+  @include iphone5 {
+    width: toRem(100);
+  }
 }
 
 .header__button {
@@ -15,4 +23,12 @@
   margin-left: toRem(10);
   padding: toRem(10);
   border-radius: toRem(5);
+
+  @include tablet {
+    padding: toRem(8);
+  }
+
+  @include mobile {
+    padding: toRem(4);
+  }
 }

@@ -1,0 +1,45 @@
+.notFound {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: toRem(30);
+
+  @include desktop {
+    margin-top: toRem(48);
+  }
+
+  &__img {
+    @include desktop {
+      width: 300px;
+      height: auto;
+    }
+  }
+
+  &__p {
+
+    @include desktop {
+      font: {
+        size: toRem(32);
+      }
+      line-height: toRem(48);
+    }
+
+    @include tablet {
+      font: {
+        size: toRem(36);
+      }
+      line-height: toRem(36);
+    }
+
+    @include mobile {
+      font: {
+        size: toRem(24);
+      }
+      line-height: toRem(24);
+    }
+
+  }
+
+}
